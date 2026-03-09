@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Import CommonModule
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-products',
@@ -19,12 +19,13 @@ export class ProductsComponent {
   selectedProduct: any = null;
   showModal: boolean = false; 
 
-  viewProductDetails(product: any) {
-    this.selectedProduct = product;
-    this.showModal = true;
-  }
 
   closeModal() {
     this.showModal = false;
+  }
+
+   viewProductDetails(product: any) {
+    this.selectedProduct = product;
+    this.showModal = true;
   }
 }

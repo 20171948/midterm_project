@@ -9,19 +9,19 @@
       <th>Action</th>
     </tr>
   </thead>
-
   <tbody>
-    <tr *ngFor="let product of products">
+    @for (product of products; track product.id) {
+    <tr>
       <td>{{ product.id }}</td>
       <td>{{ product.name }}</td>
       <td>{{ product.status }}</td>
       <td>
-        <button class="btn btn-info" (click)="viewDetails(product)">View Details</button>
+        <button class="btn btn-info" (click)="viewProductDetails(product)">View Details</button>
       </td>
     </tr>
   </tbody>
 </table>
-<divclass="modal-body">
+<div class="modal-body">
   @if (selectedProduct) {
     <h3>Product Details</h3>
     <p><strong>ID:</strong> {{ selectedProduct.id }}</p>

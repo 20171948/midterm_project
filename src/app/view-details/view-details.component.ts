@@ -1,24 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-view-details',
-  templateUrl: './view-details.component.html'
+  templateUrl: './view-details.component.html',
+  imports: [],
+  styleUrls: ['./view-details.component.css']
 })
-export class ViewDetailsComponent implements OnInit {
-
-  productName: string = "";   // <-- add this
-
-  price: number = 0;
-  description: string = "";
-  category: string = "";
-  stock: number = 0;
-  status: string = "";
-  brand: string = "";
-  rating: number = 0;
-  supplier: string = "";
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-}
+export class ViewDetailsComponent {}

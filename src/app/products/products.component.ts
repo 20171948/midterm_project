@@ -27,7 +27,7 @@ export class ProductsComponent {
   showModal: boolean = false; 
 
 
-  closeModal() {
+  closeModal(): void {
     this.showModal = false;
   }
 

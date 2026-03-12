@@ -1,63 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
   <div class="container-fluid">
 
-    <a class="navbar-brand">Midterm Project</a>
+<a class="navbar-brand">Product System</a>
 
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active">Home</a>
-        </li>
-      </ul>
-    </div>
+<ul class="navbar-nav">
 
-  </div>
-</nav>
+<li class="nav-item">
+<a class="nav-link">Products</a>
+</li>
 
-<div class="container mt-5">
+<li class="nav-item">
+<a class="nav-link">Management</a>
+</li>
 
-  <div class="card shadow-lg p-4">
+<li class="nav-item">
+<a class="nav-link">Details</a>
+</li>
 
-    <h1 class="text-center text-primary">Angular Data Binding Project</h1>
-
-    <hr>
-
-    <h3>1. Interpolation</h3>
-    <p>Student Name: <b>{{ studentName }}</b></p>
-    <p>Score: <b>{{ score }}</b></p>
-
-    <hr>
-
-    <h3>2. Property Binding</h3>
-
-    <img [src]="imageUrl" width="150" class="mb-3">
-
-    <br>
-
-    <button class="btn btn-secondary" [disabled]="isDisabled">
-      Disabled Button
-    </button>
-
-    <hr>
-
-    <h3>3. Event Binding</h3>
-
-    <button class="btn btn-success" (click)="showMessage()">
-      Click Me
-    </button>
-
-    <p class="mt-2 text-success">{{ message }}</p>
-
-    <hr>
-
-    <h3>4. Two-Way Binding</h3>
-
-    <input class="form-control w-50"
-           type="text"
-           [(ngModel)]="studentName">
-
-    <p class="mt-2">Your Name: <b>{{ studentName }}</b></p>
-
-  </div>
+</ul>
 
 </div>
+
+</nav>
+
+<app-prod-list></app-prod-list>
+<app-prod-management></app-prod-management>
+<app-view-details></app-view-details>

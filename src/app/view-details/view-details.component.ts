@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-selector:'app-view-details',
-templateUrl:'./view-details.component.html'
+  selector: 'app-view-details',
+  templateUrl: './view-details.component.html'
 })
+export class ViewDetailsComponent implements OnInit {
 
-export class ViewDetailsComponent implements OnInit{
+  productName: string = "";   // <-- add this
+
   price: number = 0;
   description: string = "";
   category: string = "";
@@ -15,8 +17,8 @@ export class ViewDetailsComponent implements OnInit{
   rating: number = 0;
   supplier: string = "";
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+
 }

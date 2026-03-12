@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+background: linear-gradient(135deg,#4e73df,#1cc88a);
+min-height:100vh;
+}
+
+.card{
+border-radius:15px;
+}
